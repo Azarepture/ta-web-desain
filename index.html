@@ -1,56 +1,89 @@
+<!--
+UTS Web Desain
+Semester Ganjil 2020/2021
+=========================
+
+Nama  : Muhamad Reza Putra Aditya
+NIM   : 200102083
+Kelas : IF20C
+-->
+
 <html>
     <head>
-        <title>Tugas Praktikum 6.1</title>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            html,
-            body,
-            ul,
-            ol,
-            li,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p,
-            div {
-                margin: 0;
-                padding: 0;
-            }
-
-            #main {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            #main > img {
-                height: 25vh;
-                margin: 1em;
-                width: 17.2vw;
-            }
-
-            #main > .big {
-                height: 40vh;
-                width: 30vw;
-            }
-        </style>
+        <title>UTS Web Desain</title>
     </head>
     <body>
-        <div id="main">
-            <img class="big" src="https://dummyimage.com/600x400/000/000" alt="">
-            <img class="big" src="https://dummyimage.com/600x400/000/000" alt="">
-            <img class="big" src="https://dummyimage.com/600x400/000/000" alt="">
-            <img src="https://dummyimage.com/600x400/000/000" alt="">
-            <img src="https://dummyimage.com/600x400/000/000" alt="">
-            <img src="https://dummyimage.com/600x400/000/000" alt="">
-            <img src="https://dummyimage.com/600x400/000/000" alt="">
-            <img src="https://dummyimage.com/600x400/000/000" alt="">
-        </div>
+        <header>
+            <h2 align="center">PERPUSTAKAAN</h2>
+            <h1 align="center">UNIVERSITAS MUHAMMADIYAH BANDUNG</h1>
+            <hr>
+        </header>
+        <br>
+        <table align="center" border="1">
+            <tr>
+                <td bgcolor="blue" colspan="2" height="20" width="750"><p align="center" style="color: white; font-size: 32px;">PENGEMBALIAN BUKU</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <br>
+                        ID Anggota
+                        <br><input type="text" size="60">
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        Kode Buku
+                        <br>
+                        <select name="Kode Buku">
+                            <option selected>-Masukkan Kode Buku-</option>
+                            <option>530 SUP Fisika Dasar</option>
+                            <option>430 IY Kimia Dasar</option>
+                            <option>196 HKO Pengenalan Web</option>
+                            <option>286 UIP Pengantar Farmasi</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <br>
+                        Nama
+                        <br><input type="text" size="60"><br>
+                        NIM
+                        <br><input type="text" size="60"><br>
+                        Alamat
+                        <br><textarea name="" id="" cols="60" rows="10"></textarea><br>
+                        <br>
+                        Judul Buku
+                        <br><input type="text" size="60"><br>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        Tanggal Peminjaman
+                        <br><input type="date"><br>
+                        <br>
+                        Tanggal Jatuh Tempo
+                        <br><input type="date"><br>
+                        <br>
+                        Tanggal Pengembalian
+                        <br><input type="date"><br>
+                        <br>
+                        Denda*:
+                        <br><input type="radio" name="Denda">Bayar Denda
+                        <br><input type="radio" name="Denda">Tidak Bayar Denda<br>
+                        <br><input type="submit" value="BATAL">
+                        <input type="submit" value="SIMPAN">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" bgcolor="blue" colspan="2">
+                    <input type="submit" value="KELUAR">
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
