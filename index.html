@@ -34,6 +34,10 @@
               padding: 0;
             }
 
+            input {
+              border: 0.15em solid #888;
+            }
+
             .flex-container {
               display: flex;
               flex: auto;
@@ -72,14 +76,14 @@
               width: 90em;
             }
 
-            .article-contact h1 {
+            .article-title {
               letter-spacing: 0.5em;
-              margin: 1.5em 0 0.5em 0;
+              margin: 2.5em 0 0.5em 0;
               text-align: center;
             }
 
             .article-contact .flex-container {
-              margin: 0 15em 0;
+              margin: 0 15% 0;
             }
 
             .address {
@@ -102,10 +106,6 @@
               margin: 1em 0;
             }
 
-            input {
-              border: 0.15em solid #888;
-            }
-
             .namemail input {
               height: 3em;
               margin-right: 1em;
@@ -122,10 +122,63 @@
             form .send {
               background-color: black;
               border: none;
+              border-radius: 10%;
               color: white;
               height: 2em;
               margin: 0.5em 0 0.5em 28.47em;
               width: 5em;
+            }
+
+            .tour-image {
+              display: block;
+              margin: 0 auto;
+            }
+
+            .tour-title {
+              background-color: #ccc;
+              margin: 3em 15% 2em;
+              width: 7.5em;
+            }
+
+            .plans {
+              background-color: #c1bfb9;
+              margin: 0 20% 6em;
+            }
+
+            .plans p {
+              margin-bottom: 2em;
+            }
+
+            .plans-left {
+              flex: 50%;
+            }
+
+            .plans-right {
+              flex: 50%;
+              text-indent: 35%;
+            }
+
+            footer {
+              background-color: #bbc3bb;
+              font-style: italic;
+            }
+
+            footer h1 {
+              flex: 60%;
+              margin: 1em;
+            }
+
+            .footer-text {
+              flex: 30%;
+              margin: 2em 0 3em;
+            }
+
+            .footer-year {
+              align-items: flex-end;
+              display: flex;
+              flex: 10%;
+              justify-content: flex-end;
+              margin: 1em;
             }
         </style>
     </head>
@@ -140,9 +193,9 @@
             </ul>
         </header>
         <article>
-            <img src="image\CROWN-photo02.png" alt="" class="article-image">
+            <img src="image\CROWN-photo01.png" alt="" class="article-image">
             <div class="article-contact">
-                <h1>CONTACT</h1>
+                <h1 class="article-title">CONTACT</h1>
                 <div class="flex-container">
                     <div class="address">
                         <p>Washington DC, US</p>
@@ -162,6 +215,39 @@
                     </div>
                 </div>
             </div>
+            <div class="article-tour">
+                <h1 class="article-title">TOUR</h1>
+                <img src="image\CROWN-photo02.png" alt="" class="tour-image">
+                <h2 class="tour-title">TOUR PLANS</h2>
+                <div class="flex-container plans">
+                    <div class="plans-left">
+                        <p>.IDAHO - February 2021</p>
+                        <p>.NEVADA - March 2021</p>
+                        <p>.KANSAS - May 2021</p>
+                        <p>.OHIO - June 2021</p>
+                        <p>.UTAH - August 2021</p>
+                    </div>
+                    <div class="plans-right">
+                        <p>.IOWA - September 2021</p>
+                        <p>.NEBRASKA - November 2021</p>
+                        <p>.KENTUCKY - December 2021</p>
+                        <p>.VIRGINIA - February 2022</p>
+                        <p>.WEST VIRGINIA - March 2022</p>
+                    </div>
+                </div>
+            </div>
         </article>
+        <footer>
+            <div class="flex-container">
+                <h1>CROWN THE EMPIRE</h1>
+                <div class="footer-text">
+                    <p>Follow us on social media</p>
+                    <p>.</p>
+                    <p>IG : @crowntheempire</p>
+                    <p>FB : @crowntheempirefb</p>
+                </div>
+                <p class="footer-year">2020</p>
+            </div>
+        </footer>
     </body>
 </html>
