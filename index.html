@@ -1,255 +1,78 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Tugas Raray Samasi</title>
-        <style>
-            * {
-              box-sizing: border-box;
-              list-style: none;
-              max-width: 100%;
-            }
-
-            a {
-              color: black;
-              text-decoration: none;
-            }
-
-            a:hover {
-              text-decoration: underline;
-            }
-
-            html,
-            body,
-            ul,
-            ol,
-            li,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            p,
-            div {
-              margin: 0;
-              padding: 0;
-            }
-
-            input {
-              border: 0.15em solid #888;
-            }
-
-            .flex-container {
-              display: flex;
-              flex: auto;
-            }
-
-            body {
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-
-            header {
-              align-items: center;
-              border-bottom: 0.15em solid black;
-              display: flex;
-              flex: auto;
-            }
-
-            header img {
-              height: 5em;
-              margin: 1em 0 1em 1em;
-              width: 16.5em;
-            }
-
-            header li {
-              margin-left: 8em;
-            }
-
-            header a {
-              font-weight: bold;
-            }
-
-            .article-image {
-              display: block;
-              height: 34em;
-              margin-left: auto;
-              margin-right: auto;
-              width: 90em;
-            }
-
-            .article-title {
-              letter-spacing: 0.5em;
-              margin: 2.5em 0 0.5em 0;
-              text-align: center;
-            }
-
-            .article-contact .flex-container {
-              margin: 0 15% 0;
-            }
-
-            .address {
-              flex: 50%;
-            }
-
-            .address p {
-              margin: 2em 0;
-            }
-
-            .join {
-              display: flex;
-              flex: 50%;
-              justify-content: flex-end;
-            }
-
-            .join p {
-              color: #888;
-              font-size: 14px;
-              margin: 1em 0;
-            }
-
-            .namemail input {
-              height: 3em;
-              margin-right: 1em;
-              width: 16em;
-            }
-
-            form .address {
-              display: block;
-              height: 3em;
-              margin-top: 1em;
-              width: 33.4em;
-            }
-
-            form .send {
-              background-color: black;
-              border: none;
-              border-radius: 10%;
-              color: white;
-              height: 2em;
-              margin: 0.5em 0 0.5em 28.4em;
-              width: 5em;
-            }
-
-            .tour-image {
-              display: block;
-              margin: 0 auto;
-            }
-
-            .tour-title {
-              background-color: #ccc;
-              margin: 3em 15% 2em;
-              width: 7.5em;
-            }
-
-            .plans {
-              background-color: #c1bfb9;
-              margin: 0 20% 6em;
-            }
-
-            .plans p {
-              margin-bottom: 2em;
-            }
-
-            .plans-left {
-              flex: 50%;
-            }
-
-            .plans-right {
-              flex: 50%;
-              text-indent: 35%;
-            }
-
-            footer {
-              background-color: #bbc3bb;
-              font-style: italic;
-            }
-
-            footer h1 {
-              flex: 60%;
-              margin: 1em;
-            }
-
-            .footer-text {
-              flex: 30%;
-              margin: 2em 0 3em;
-            }
-
-            .footer-year {
-              align-items: flex-end;
-              display: flex;
-              flex: 10%;
-              justify-content: flex-end;
-              margin: 1em;
-            }
-        </style>
+        <title>Universitas Muhammadiyah Bandung</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     </head>
+
     <body>
         <header>
-            <img src="image\CROWN-logo01.png" alt="">
-            <ul class="flex-container">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MERCHANDISE</a></li>
-                <li><a href="#">TOURS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
+            <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: rgb(7, 7, 61);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid" src="img\UMB-Logo-White.png" alt="Logo" width="150" height="120">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="about.html">Tentang UMBandung</a>
+                            </li>
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Fakultas
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Fakultas Sains & Teknologi</a></li>
+                                    <li><a class="dropdown-item" href="#">Fakultas Sosial Humaniora</a></li>
+                                    <li><a class="dropdown-item" href="#">Fakultas Ekonomi & Bisnis</a></li>
+                                    <li><a class="dropdown-item" href="#">Fakultas Ilmu Keislaman</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <img class="img-fluid mt-5" src="img\umb.png" alt="UMBandung">
         </header>
-        <article>
-            <img src="image\CROWN-photo01.png" alt="" class="article-image">
-            <div class="article-contact">
-                <h1 class="article-title">CONTACT</h1>
-                <div class="flex-container">
-                    <div class="address">
-                        <p>Washington DC, US</p>
-                        <p>Phone: +00 5631984</p>
-                        <p>Email: <a href="#">Crown@theempire.net</a></p>
-                    </div>
-                    <div class="join">
-                        <form>
-                            <p>Fan? Join us for keep an update</p>
-                            <div class="namemail">
-                                <input type="text" placeholder="Name">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <input type="text" placeholder="Address" class="address">
-                            <input type="submit" value="SEND" class="send">
-                        </form>
-                    </div>
+        <div class="container-fluid text-center text-white py-5" style="background-color: rgb(7, 7, 61);">
+            <figure>
+                <blockquote class="blockquote">
+                    <h1 class="display-2">Universitas Muhammadiyah Bandung</h1>
+                </blockquote>
+                <div class="blockquote-footer">
+                    <h3>Islamic Technopreneur University</h3>
                 </div>
+            </figure>
+            <div class="container mt-5 px-5">
+                <p>
+                    Universitas Muhammadiyah Bandung (UMBandung), berdasarkan
+                    <b>Surat Izin Kemenristek Dikti No. 205/KPT/I/2016 yang diterbitkan pada tanggal 14 Juni 2016</b>
+                    menyelenggarakan 11 Program Studi unggulan. Cita-cita besar UMBandung adalah melahirkan para Teknopreneur Muda
+                    Islami,
+                    yang selain memiliki kemampuan akademis, tapi juga memiliki sikap mental dan enterpreneur skill/ kewirausahaan,
+                    serta
+                    memiliki kemampuan dalam memanfaatkan kemajuan teknologi. Dengan demikian, lulusan UMBandung Insya Allah akan
+                    memiliki
+                    peluang yang besar untuk membangun kehidupan yang lebih baik untuk dirinya maupun lingkungan sekitarnya.
+                </p>
             </div>
-            <div class="article-tour">
-                <h1 class="article-title">TOUR</h1>
-                <img src="image\CROWN-photo02.png" alt="" class="tour-image">
-                <h2 class="tour-title">TOUR PLANS</h2>
-                <div class="flex-container plans">
-                    <div class="plans-left">
-                        <p>.IDAHO - February 2021</p>
-                        <p>.NEVADA - March 2021</p>
-                        <p>.KANSAS - May 2021</p>
-                        <p>.OHIO - June 2021</p>
-                        <p>.UTAH - August 2021</p>
-                    </div>
-                    <div class="plans-right">
-                        <p>.IOWA - September 2021</p>
-                        <p>.NEBRASKA - November 2021</p>
-                        <p>.KENTUCKY - December 2021</p>
-                        <p>.VIRGINIA - February 2022</p>
-                        <p>.WEST VIRGINIA - March 2022</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <footer>
-            <div class="flex-container">
-                <h1>CROWN THE EMPIRE</h1>
-                <div class="footer-text">
-                    <p>Follow us on social media</p>
-                    <p>.</p>
-                    <p>IG : @crowntheempire</p>
-                    <p>FB : @crowntheempirefb</p>
-                </div>
-                <p class="footer-year">2020</p>
-            </div>
-        </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     </body>
 </html>
